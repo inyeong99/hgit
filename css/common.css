@@ -94,3 +94,67 @@ select:focus {
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
 }
+
+
+
+:root {
+    --spacing-xxxl: 40px;
+    --spacing-xxl: 32px;
+    --spacing-xl: 24px;
+    --spacing-lg: 20px;
+    --spacing: 16px;
+    --spacing-md: 12px;
+    --spacing-sm: 8px;
+    --spacing-xs: 4px;
+    --spacing-Mxxxl: -40px;
+    --spacing-Mxxl: -32px;
+    --spacing-Mxl: -24px;
+    --spacing-Mlg: -20px;
+    --spacing-M: -16px;
+    --spacing-Mmd: -12px;
+    --spacing-Msm: -8px;
+    --spacing-Mxs: -4px;
+    --tf-md: 40px;
+    --tf-sm: 32px;
+    --tf-xs: 24px;
+    --tf-xxs: 24px;
+    --tf-check: 16px;
+    --font-xxxl: 24px;
+    --font-xxl: 23px;
+    --font-xl: 22px;
+    --font-lg: 20px;
+    --font-md-lg: 18px;
+    --font-base-lg: 17px;
+    --font-base: 16px;
+    --font-md: 15px;
+    --font-sm: 14px;
+    --font-xs: 13px;
+    --font-xxs: 12px;
+    --color-black: #000;
+    --color-default: #111;
+    --color-darkgray: #666;
+    --color-gray: #bbb;
+    --color-gray2: #ccc;
+    --color-lightgray: #e8e8e8;
+    --color-lightgray2: #f3f3f3;
+    --color-white: #fff;
+    --color-primary: #635FFF;
+    --color-secondary: #8656F5;
+    --color-navy: #314068;
+    --color-red: #FF0A73;
+    --color-deepred: #E11212;
+    --color-yellow: #FFB400;
+    --color-green: #00BD6A;
+    --color-deepgreen: #0D7617;
+    --color-blue: #0082FF;
+    --color-deepblue: #0F629E;
+    --bg-color-main: #F5F8FF;
+    --bg-color-content: #F4F5FA;
+    --bg-color-content2: #FAFAFA;
+  }
+
+  .btn_color{ 
+    color: var(--bg-color-main);
+  }
+
+ 
