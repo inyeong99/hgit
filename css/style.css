@@ -194,15 +194,15 @@ a:focus-visible {
 }
 
 .s0102 .sub_inner .title h2 {
+  color: #111111;
   font-size: 40px;
   font-weight: 700;
-  color: #111111;
 }
 
 .s0102 .sub_inner .title h2 p span.tit_color {
+  color: #0075c2;
   font-size: 60px;
   font-weight: 700;
-  color: #0075c2;
 }
 
 /*서브디자인 영역 마침*/
