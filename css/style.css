@@ -385,7 +385,7 @@ a:focus-visible {
   text-align: center;
 }
 
-.subVisual h2.tit {
+.subVisual .tit_wrap h2.tit {
   font-size: 38px;
   font-weight: 800;} 
 
