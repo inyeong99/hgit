@@ -154,10 +154,11 @@ a:focus-visible {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   height: 100px;
   color: #fff;
   transform: translate(-50%, 0%);
-  gap: 8px;
+  gap: 12px;
 }
 .banner .banner_title span {
   display: inline;
@@ -165,13 +166,7 @@ a:focus-visible {
 }
 /* 서브 타이틀 */
 .banner .sub_title {
-  background-image: linear-gradient(
-    120deg,
-    #e2fdfa 10%,
-    #ffffff 20%,
-    #ffffff 69.98%,
-    #e2fdfa 99.95%
-  );
+  background-image: linear-gradient(120deg, #e2fdfa 10%, #ffffff 20%, #ffffff 69.98%, #e2fdfa 99.95%);
   -webkit-background-clip: text;
   font-size: 24px;
   font-weight: 600;
@@ -179,14 +174,7 @@ a:focus-visible {
 }
 /* 서브 타이틀 애니메이션 효과 */
 .banner .sub_title {
-  background-image: linear-gradient(
-    -45deg,
-    #33f5e1 5%,
-    #ffffff 10%,
-    #ffffff 30%,
-    #e2fdfa 70%,
-    #33f5e1 90%
-  );
+  background-image: linear-gradient(-45deg, #33f5e1 5%, #ffffff 10%, #ffffff 30%, #e2fdfa 70%, #33f5e1 90%);
   background-size: 550px 100%;
   animation: gradient 8s ease infinite;
   animation-iteration-count: 1; /* 한번 재생 */
@@ -202,32 +190,27 @@ a:focus-visible {
 }
 /* 메인 타이틀 */
 .banner .main_title {
-  line-height: 140%;
-  background-image: linear-gradient(
-    120deg,
-    #33f5e1 1%,
-    #e2fdfa 10%,
-    #ffffff 20%,
-    #e2fdfa 60%,
-    #33f5e1 70%
-  );
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  line-height: 170%;
+  background-image: linear-gradient(120deg, #33f5e1 1%, #e2fdfa 10%, #ffffff 20%, #e2fdfa 60%, #33f5e1 70%);
   -webkit-background-clip: text;
+  white-space: nowrap;
   font-size: 80px;
   font-weight: 700;
   -webkit-text-fill-color: transparent;
+  gap: 18px;
+}
+.banner .main_title img {
+  width: 180px;
+  height: 77px;
 }
 /* 메인 타이틀 애니메이션 효과 */
 .banner .main_title {
-  background-image: linear-gradient(
-    -45deg,
-    #33f5e1 20%,
-    #ffffff 30%,
-    #ffffff 40%,
-    #e2fdfa 60%,
-    #33f5e1 70%
-  );
+  background-image: linear-gradient(-45deg, #33f5e1 20%, #ffffff 30%, #ffffff 40%, #e2fdfa 60%, #33f5e1 70%);
   background-size: 1300px 100%;
-  animation: gradient 8s ease infinite;
+  animation: gradient 2s ease infinite;
   animation-iteration-count: 1; /* 한번 재생 */
   animation-fill-mode: forwards;
 }
@@ -240,8 +223,23 @@ a:focus-visible {
   }
 }
 /* 날짜 */
-.banner .day {
-  font-size: 24px;
+.banner .banner_title .day {
+  display: flex;
+  display: inline-block;
+  flex-direction: row;
+  line-height: 150%;
+  font-family: "S-Core Dream";
+  font-size: 36px;
+  font-weight: 700;
+}
+.banner .banner_title .place {
+  display: flex;
+  display: inline-block;
+  flex-direction: row;
+  line-height: 150%;
+  font-family: "S-Core Dream";
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*swiper*/
@@ -285,31 +283,30 @@ a:focus-visible {
 }
 .banner .swiper-pagination-bullet {
   display: inline-block;
-  width: var(
-    --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 8px)
-  );
-  height: var(
-    --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 8px)
-  );
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
-  background: var(
-    --swiper-pagination-bullet-inactive-color,
-    rgba(255, 255, 255, 0.5)
-  );
+  background: var(--swiper-pagination-bullet-inactive-color, rgba(255, 255, 255, 0.5));
 }
 .banner .swiper-pagination-bullet-active {
   opacity: 1;
   background: var(--swiper-pagination-bullet-inactive-color, #fff);
 }
-
+.banner .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: var(--swiper-pagination-top, auto);
+  bottom: var(--swiper-pagination-bottom, 60px);
+  left: 0;
+  width: 100%;
+}
 /*유튜브 소개영상 링크 버튼*/
 .banner .link {
   position: absolute;
   z-index: 1;
-  bottom: 120px;
+  bottom: 160px;
   left: 50%;
   display: inline-block;
   width: 120px;
