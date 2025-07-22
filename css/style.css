@@ -8,7 +8,7 @@
 .header {
   width: 100%;
   height: 940px;
-  background-image: url(/imge/main_visual.jpg);
+  background-image: url(/image/main_visual.jpg);
 }
 .header .gnb {
   display: flex;
