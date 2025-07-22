@@ -144,6 +144,12 @@
       </header>
       <!-- 메인배너 -->
       <div class="banner">
+        <title class="banner_title">
+          <span>에너지의 미래를 이끌어 가는</span>
+          <span>Global Energy Forum</span>
+          <span>2025. 9. 17. <p>[Wed]</p> - 9. 18. <p>Thu</p></span>
+          <span>한국에너지공과대학교(KENTECH)</span>
+        </title>
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -151,19 +157,62 @@
               <img src="/image/main_visual.jpg" alt="main_visual" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju1.png" alt="img_naju1" />
+              <img src="/image/img_naju31.png" alt="img_naju31" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju2.png" alt="img_naju2" />
+              <img src="/image/main_visual.jpg" alt="img_naju2" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju3.png" alt="img_naju3" />
+              <img src="/image/img_naju42.png" alt="img_naju42" />
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+        <!-- 재생버튼 -->
+        <a
+          href="https://youtu.be/OeeQJRxgbow"
+          class="link"
+          onclick="window.open(this.href, '_blank'); return false;"
+        >
+          <svg
+            viewBox="0 0 200 200"
+            width="120"
+            height="120"
+            class="link__svg"
+            aria-label="Naju Global Energy Forum"
+          >
+            <path
+              id="link-circle"
+              d="M 30,100 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"
+            />
+
+            <!-- 텍스트용 외부 원 (이미 자연스러움) -->
+            <path
+              id="text-circle"
+              d="M 16,100 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0"
+              fill="none"
+              stroke="none"
+            />
+
+            <image
+              class="link__arrow"
+              href="/image/play.svg"
+              x="80"
+              y="75"
+              width="50"
+              height="50"
+            />
+
+            <!-- 원형 텍스트: 바깥 원을 기준으로 -->
+            <text class="link__text">
+              <textPath href="#text-circle">
+                • Naju Global Energy Forum • Naju Global Energy Forum •
+              </textPath>
+            </text>
+          </svg>
+        </a>
       </div>
       <!-- 컨텐츠 -->
       <div class="content">
@@ -193,7 +242,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".banner .mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
