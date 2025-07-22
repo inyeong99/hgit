@@ -1,7 +1,7 @@
 // script.js 파일 내용
 //alert("JavaScript 파일이 연결되었습니다!");
 
-  // 네비
+// 네비
 $(document).ready(function () {
   // 메뉴 열기
   $(".nav > ul > li").on("mouseenter focusin", function () {
@@ -28,27 +28,28 @@ $(document).ready(function () {
     }
   });
 });
-  // lnag
+// lnag
 function dp_menu() {
   $(".lang_menu a").css("display", "block");
 }
 
 $(function () {
   // 메뉴 열기
-  $(".lang_btn").on('click', function (e) {
+  $(".lang_btn").on("click", function (e) {
     e.stopPropagation(); // 외부 클릭으로 바로 닫히는 것 방지
     $(".lang_menu").show();
   });
 
   // 메뉴 항목 클릭 시 메뉴 닫기
-  $(".lang_menu a").on('click', function () {
+  $(".lang_menu a").on("click", function () {
     $(".lang_menu").hide();
   });
 
   // 외부 클릭 시 메뉴 닫기
-  $(document).on('click', function (e) {
+  $(document).on("click", function (e) {
     if (!$(e.target).closest(".lang").length) {
       $(".lang_menu").hide();
     }
   });
 });
+

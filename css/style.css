@@ -8,9 +8,12 @@
 .header {
   width: 100%;
   height: 940px;
-  background-image: url(/image/main_visual.jpg);
 }
 .header .gnb {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,19 +130,50 @@ a:focus-visible {
 .lang_menu a:last-child {
   border-radius: 0 0 4px 4px;
 }
-.mr12{
-    margin-right: 12px;
+.mr12 {
+  margin-right: 12px;
 }
 /*map*/
 .gnb .map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 100%;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
-.gnb .map i{
-    color: white;
-    font-size: 18px;
+.gnb .map i {
+  color: white;
+  font-size: 18px;
+}
+/*swiper*/
+.header .banner {
+  position: relative;
+  z-index: 1;
+  background-color: red;
+}
+.swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-right: auto;
+  margin-left: auto;
 }
