@@ -32,27 +32,22 @@
 }
 
 .subVisual .tit_wrap h2.tit {
-<<<<<<< HEAD
-  font-size: 38px;
-  font-weight: 800;
-=======
   font-size: 60px;
   font-weight: 700;
 }
 
 .nv-menu {
   position: absolute;
-  left: 50%;
+  z-index: 10;
   bottom: -35px;
-  transform: translateX(-50%);
+  left: 50%;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 1340px;
-  background: #020a14;
-  z-index: 10;
   border-radius: 12px;
->>>>>>> 6c08e53f1317ec634d6afa0930a833bba5c76e08
+  background: #020a14;
+  transform: translateX(-50%);
 }
 
 .content_sub .content {
