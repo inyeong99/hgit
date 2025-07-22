@@ -143,3 +143,33 @@ a:focus-visible {
     color: white;
     font-size: 18px;
 }
+
+/*서브디자인 영역*/
+
+.content_sub .content {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto 60px;
+}
+
+.s0102 .sub_inner .title {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.s0102 .sub_inner .title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.s0102 .sub_inner .title h2 p span.tit_color {
+  font-size: 60px;
+  font-weight: 700;
+  color: #0075c2;
+}
+
+/*서브디자인 영역 마침*/
+
