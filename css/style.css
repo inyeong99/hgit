@@ -361,7 +361,7 @@ a:focus-visible {
 /*서브디자인 영역*/
 
 /*서브비주얼*/
-#subVisual {
+.subVisual {
   position: relative;
   z-index: -1;
   top: 0;
