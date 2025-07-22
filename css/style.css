@@ -82,7 +82,9 @@
   width: 100%;
   text-align: center;
 }
-.nav > ul > li > ul > li {
+.nav > ul > li > ul {
+  overflow: hidden;
+  border-radius: 4px;
   background-color: white;
 }
 .nav > ul > li > ul > li > a {
@@ -91,15 +93,9 @@
   box-sizing: border-box;
   padding: 12px;
 }
-.nav > ul > li > ul > li:hover {
+.nav > ul > li > ul > li > a:hover {
   color: white;
   background-color: #eb5402;
-}
-.nav > ul > li > ul > li:first-child {
-  border-radius: 4px 4px 0 0;
-}
-.nav > ul > li > ul > li:last-child {
-  border-radius: 0 0 4px 4px;
 }
 /*접근성*/
 a:focus-visible {
@@ -130,22 +126,18 @@ a:focus-visible {
 .lang_menu {
   position: absolute;
   top: 112px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: white;
 }
 .lang_menu a {
   display: none;
   box-sizing: border-box;
   padding: 10px 32px;
-  background-color: white;
 }
 .lang_menu a:hover {
   color: white;
   background-color: #eb5402;
-}
-.lang_menu a:first-child {
-  border-radius: 4px 4px 0 0;
-}
-.lang_menu a:last-child {
-  border-radius: 0 0 4px 4px;
 }
 .mr12 {
   margin-right: 12px;
@@ -170,15 +162,91 @@ a:focus-visible {
 .banner .banner_title {
   position: absolute;
   z-index: 3;
-  top: 50%;
+  top: 34%;
   left: 50%;
-  display: inline-block;
-  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   height: 100px;
+  color: #fff;
+  transform: translate(-50%, 0%);
+  gap: 8px;
 }
 .banner .banner_title span {
-    color: #fff;
-  font-size: 16px;
+  display: inline;
+  color: #fff;
+}
+.banner .sub_title {
+  background-image: linear-gradient(
+    120deg,
+    #e2fdfa 10%,
+    #ffffff 20%,
+    #ffffff 69.98%,
+    #e2fdfa 99.95%
+  );
+  -webkit-background-clip: text;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+}
+.banner .sub_title {
+  background-image: linear-gradient(
+    -45deg,
+    #33f5e1 5%,
+    #ffffff 10%,
+    #ffffff 30%,
+    #e2fdfa 40%,
+    #33f5e1 50%
+  );
+    background-size: 550px 100%;
+    animation: gradient 8s ease infinite;
+    animation-iteration-count : 1; /* 한번 재생 */
+    animation-fill-mode: forwards;
+}
+@keyframes gradient {
+    0% {
+     background-position: 0%;
+    }
+    100% {
+     background-position: 100%;
+    }
+}
+.banner .main_title {
+  line-height: 140%;
+  background-image: linear-gradient(
+    120deg,
+    #33f5e1 1%,
+    #e2fdfa 10%,
+    #ffffff 20%,
+    #e2fdfa 60%,
+    #33f5e1 70%
+  );
+  -webkit-background-clip: text;
+  font-size: 80px;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+.banner .main_title {
+  background-image: linear-gradient(
+    -45deg,
+    #33f5e1 20%,
+    #ffffff 30%,
+    #ffffff 40%,
+    #e2fdfa 60%,
+    #33f5e1 70%
+  );
+    background-size: 1300px 100%;
+    animation: gradient 8s ease infinite;
+    animation-iteration-count : 1; /* 한번 재생 */
+    animation-fill-mode: forwards;
+}
+@keyframes gradient {
+    0% {
+     background-position: 0%;
+    }
+    100% {
+     background-position: 100%;
+    }
 }
 /*swiper*/
 .banner .swiper {
@@ -278,7 +346,7 @@ a:focus-visible {
 .banner .link__text {
   transform-origin: 50% 50%;
   animation: rotateReverse 20s linear infinite;
-    text-transform: capitalize;
+  text-transform: capitalize;
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 300;
