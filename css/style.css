@@ -190,27 +190,75 @@ a:focus-visible {
 
 /*서브디자인 영역*/
 
+/*서브비주얼*/
+#subVisual {
+    background: url(../image/sub/sub_visual_01.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 440px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    z-index: -1;
+}
+
+.subVisual .tit_wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-35%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.subVisual h2.tit {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+
 .content_sub .content {
   width: 100%;
   max-width: 1340px;
   margin: 0 auto 60px;
 }
 
+/*s0102 인사말씀*/
 .s0102 .sub_inner .title {
   position: relative;
   display: flex;
   width: 100%;
-  padding: 0;
   margin-bottom: 60px;
+  padding-top: 60px;
+  overflow: visible;
+  padding-bottom: 514px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:40px;
 }
 
 .s0102 .sub_inner .title::before {
+  content: "";
   position: absolute;
-  width: 100%;
+  width: 1920px;
   height: 514px;
   background: url("../image/sub/s0102_title_bg.png") 0 0 no-repeat;
   background-size: 100% auto;
+  z-index: -1;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.s0102 .sub_inner .title::after {
   content: "";
+  position: absolute;
+  width: 1920px;
+  height: 514px;
+  background: #ffffff;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
 }
 
 .s0102 .sub_inner .title h2 {
@@ -218,6 +266,10 @@ a:focus-visible {
   color: #111111;
   font-size: 40px;
   font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  flex: 1;
+  min-width: 0;
 }
 
 .s0102 .sub_inner .title h2 p span.tit_color {
@@ -228,8 +280,10 @@ a:focus-visible {
 
 .s0102 .sub_inner .title .Mayor_box {
   position: absolute;
-  top: 0;
   right: 0;
+  z-index: 3;
+  flex-shrink: 0;
+  width: 490px;
 }
 
 .s0102 .sub_inner .title .Mayor_box p.sign {
@@ -244,7 +298,9 @@ a:focus-visible {
 }
 
 .s0102 .sub_inner .con_wrap {
-  margin-top: 60px;
+  margin-top: -514px;
+  position: relative;
+  z-index: 1;
 }
 
 .s0102 .sub_inner .con_wrap p.exp {
