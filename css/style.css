@@ -19,24 +19,7 @@
   width: 100%;
   height: 112px;
   padding-left: 120px;
-}
-/*메인 gnb 컬러*/
-.maingnb {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-.mainmap {
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-}
-/*메인 컬러*/
-.maincolor {
-  color: white;
-}
-/*서브 gnb 컬러*/
-.subgnb {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-.submap {
-  border-left: 1px solid rgba(0, 0, 0, 0.07);
 }
 .gnb .logo img {
   width: 185px;
@@ -70,7 +53,6 @@
   text-align: center;
   font-size: 18px;
 }
-/*메인 gnb 컬러*/
 .mainnav > ul > li > a {
   color: #fff;
 }
@@ -82,7 +64,9 @@
   width: 100%;
   text-align: center;
 }
-.nav > ul > li > ul > li {
+.nav > ul > li > ul {
+  overflow: hidden;
+  border-radius: 4px;
   background-color: white;
 }
 .nav > ul > li > ul > li > a {
@@ -91,15 +75,9 @@
   box-sizing: border-box;
   padding: 12px;
 }
-.nav > ul > li > ul > li:hover {
+.nav > ul > li > ul > li > a:hover {
   color: white;
   background-color: #eb5402;
-}
-.nav > ul > li > ul > li:first-child {
-  border-radius: 4px 4px 0 0;
-}
-.nav > ul > li > ul > li:last-child {
-  border-radius: 0 0 4px 4px;
 }
 /*접근성*/
 a:focus-visible {
@@ -122,30 +100,28 @@ a:focus-visible {
   justify-content: center;
   width: 120px;
   height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 .lang_btn {
+  color: #fff;
   text-align: center;
   font-size: 18px;
 }
 .lang_menu {
   position: absolute;
   top: 112px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: white;
 }
 .lang_menu a {
   display: none;
   box-sizing: border-box;
   padding: 10px 32px;
-  background-color: white;
 }
 .lang_menu a:hover {
   color: white;
   background-color: #eb5402;
-}
-.lang_menu a:first-child {
-  border-radius: 4px 4px 0 0;
-}
-.lang_menu a:last-child {
-  border-radius: 0 0 4px 4px;
 }
 .mr12 {
   margin-right: 12px;
@@ -157,35 +133,229 @@ a:focus-visible {
   justify-content: center;
   width: 120px;
   height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 .gnb .map i {
+  color: #fff;
   font-size: 18px;
 }
+/* 배너 */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* 타이틀 */
+.banner .banner_title {
+  position: absolute;
+  z-index: 3;
+  top: 34%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  color: #fff;
+  transform: translate(-50%, 0%);
+  gap: 8px;
+}
+.banner .banner_title span {
+  display: inline;
+  color: #fff;
+}
+/* 서브 타이틀 */
+.banner .sub_title {
+  background-image: linear-gradient(
+    120deg,
+    #e2fdfa 10%,
+    #ffffff 20%,
+    #ffffff 69.98%,
+    #e2fdfa 99.95%
+  );
+  -webkit-background-clip: text;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+}
+/* 서브 타이틀 애니메이션 효과 */
+.banner .sub_title {
+  background-image: linear-gradient(
+    -45deg,
+    #33f5e1 5%,
+    #ffffff 10%,
+    #ffffff 30%,
+    #e2fdfa 70%,
+    #33f5e1 90%
+  );
+  background-size: 550px 100%;
+  animation: gradient 8s ease infinite;
+  animation-iteration-count: 1; /* 한번 재생 */
+  animation-fill-mode: forwards;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* 메인 타이틀 */
+.banner .main_title {
+  line-height: 140%;
+  background-image: linear-gradient(
+    120deg,
+    #33f5e1 1%,
+    #e2fdfa 10%,
+    #ffffff 20%,
+    #e2fdfa 60%,
+    #33f5e1 70%
+  );
+  -webkit-background-clip: text;
+  font-size: 80px;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+/* 메인 타이틀 애니메이션 효과 */
+.banner .main_title {
+  background-image: linear-gradient(
+    -45deg,
+    #33f5e1 20%,
+    #ffffff 30%,
+    #ffffff 40%,
+    #e2fdfa 60%,
+    #33f5e1 70%
+  );
+  background-size: 1300px 100%;
+  animation: gradient 8s ease infinite;
+  animation-iteration-count: 1; /* 한번 재생 */
+  animation-fill-mode: forwards;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* 날짜 */
+.banner .day {
+  font-size: ;
+}
+
 /*swiper*/
-.swiper {
+.banner .swiper {
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 900px;
+  height: 100%;
 }
-.swiper-slide {
+.banner .swiper-slide {
   background-position: center;
   background-size: cover;
   text-align: center;
   font-size: 18px;
 }
-
-.swiper-slide img {
+.banner .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.swiper {
+.banner .swiper {
   margin-right: auto;
   margin-left: auto;
+}
+.banner .swiper-button-next,
+.banner .swiper-button-prev {
+  position: absolute;
+  z-index: 10;
+  top: var(--swiper-navigation-top-offset, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--swiper-navigation-size) / 44 * 60);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  color: #fff !important;
+  cursor: pointer;
+}
+.banner .swiper-pagination-bullet {
+  display: inline-block;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+  background: var(
+    --swiper-pagination-bullet-inactive-color,
+    rgba(255, 255, 255, 0.5)
+  );
+}
+.banner .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
+}
+
+/*유튜브 소개영상 링크 버튼*/
+.banner .link {
+  position: absolute;
+  z-index: 1;
+  bottom: 120px;
+  left: 50%;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+.banner .link__svg {
+  width: 100%;
+  height: 100%;
+  stroke: #111111;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.05em;
+  fill: #111111;
+}
+#link-circle {
+  fill: #111111;
+}
+.banner .link__arrow {
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  transform-origin: 50% 50%;
+  stroke-width: 0.075em;
+}
+.banner .link:hover .link__arrow {
+  transform: scale(1.1);
+}
+.banner .link__text {
+  transform-origin: 50% 50%;
+  animation: rotateReverse 20s linear infinite;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 300;
+  stroke: none;
+  fill: white;
+}
+.banner .link:hover .link__text {
+  animation-play-state: paused;
+}
+@keyframes rotateReverse {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 /*서브디자인 영역*/
@@ -305,7 +475,7 @@ a:focus-visible {
 
 .s0102 .sub_inner .con_wrap p.exp {
   line-height: 180%;
-  color:#333333;
+  color: #333333;
   font-size: 19px;
 }
 

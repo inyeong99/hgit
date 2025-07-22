@@ -27,7 +27,7 @@
     <div class="wrapper">
       <!-- 헤더 -->
       <header class="header">
-        <div class="gnb maingnb">
+        <div class="gnb">
           <!-- 로고 -->
           <div class="logo">
             <a
@@ -44,7 +44,7 @@
           <!-- 메뉴 -->
           <nav class="nav mainnav" role="navigation" aria-label="주 메뉴">
             <ul role="menubar">
-              <li role="none">
+              <li>
                 <a
                   href="#"
                   role="menuitem"
@@ -57,17 +57,17 @@
                   role="menu"
                   aria-label="나주 글로벌에너지포럼 하위 메뉴"
                 >
-                  <li role="none"><a href="#" role="menuitem">행사소개</a></li>
-                  <li role="none">
+                  <li><a href="#" role="menuitem">행사소개</a></li>
+                  <li>
                     <a href="s0102.html" role="menuitem">인사말씀</a>
                   </li>
-                  <li role="none">
+                  <li>
                     <a href="#" role="menuitem">행사장 안내</a>
                   </li>
-                  <li role="none"><a href="#" role="menuitem">파트너</a></li>
+                  <li><a href="#" role="menuitem">파트너</a></li>
                 </ul>
               </li>
-              <li role="none">
+              <li>
                 <a
                   href="#"
                   role="menuitem"
@@ -76,14 +76,14 @@
                   >프로그램</a
                 >
                 <ul class="submenu" role="menu" aria-label="프로그램 하위 메뉴">
-                  <li role="none"><a href="#" role="menuitem">프로그램</a></li>
-                  <li role="none"><a href="#" role="menuitem">세션</a></li>
+                  <li><a href="#" role="menuitem">프로그램</a></li>
+                  <li><a href="#" role="menuitem">세션</a></li>
                 </ul>
               </li>
-              <li role="none">
+              <li>
                 <a href="#" role="menuitem">연사소개</a>
               </li>
-              <li role="none">
+              <li>
                 <a
                   href="#"
                   role="menuitem"
@@ -92,11 +92,11 @@
                   >참가신청</a
                 >
                 <ul class="submenu" role="menu" aria-label="참가신청 하위 메뉴">
-                  <li role="none"><a href="#" role="menuitem">참가신청</a></li>
-                  <li role="none"><a href="#" role="menuitem">신청확인</a></li>
+                  <li><a href="#" role="menuitem">참가신청</a></li>
+                  <li><a href="#" role="menuitem">신청확인</a></li>
                 </ul>
               </li>
-              <li role="none">
+              <li>
                 <a
                   href="#"
                   role="menuitem"
@@ -105,12 +105,12 @@
                   >아카이브</a
                 >
                 <ul class="submenu" role="menu" aria-label="아카이브 하위 메뉴">
-                  <li role="none"><a href="#" role="menuitem">지난포럼</a></li>
-                  <li role="none"><a href="#" role="menuitem">지식포털</a></li>
-                  <li role="none"><a href="#" role="menuitem">youtube</a></li>
+                  <li><a href="#" role="menuitem">지난포럼</a></li>
+                  <li><a href="#" role="menuitem">지식포털</a></li>
+                  <li><a href="#" role="menuitem">youtube</a></li>
                 </ul>
               </li>
-              <li role="none">
+              <li>
                 <a
                   href="#"
                   role="menuitem"
@@ -119,17 +119,17 @@
                   >미디어</a
                 >
                 <ul class="submenu" role="menu" aria-label="미디어 하위 메뉴">
-                  <li role="none"><a href="#" role="menuitem">공지사항</a></li>
-                  <li role="none"><a href="#" role="menuitem">관련뉴스</a></li>
-                  <li role="none"><a href="#" role="menuitem">행사사진</a></li>
+                  <li><a href="#" role="menuitem">공지사항</a></li>
+                  <li><a href="#" role="menuitem">관련뉴스</a></li>
+                  <li><a href="#" role="menuitem">행사사진</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
           <!-- 언어 -->
           <div class="lang mainmap">
-            <button onClick="dp_menu()" class="lang_btn maincolor">
-              <i class="ri-global-line mr12 maincolor"></i>KR
+            <button onClick="dp_menu()" class="lang_btn">
+              <i class="ri-global-line mr12"></i>KR
             </button>
             <div class="lang_menu">
               <a href="#">KR</a>
@@ -137,13 +137,19 @@
             </div>
           </div>
           <!-- 사이트맵 -->
-          <div class="map maincolor mainmap">
+          <div class="map">
             <i class="ri-menu-line"></i>
           </div>
         </div>
       </header>
       <!-- 메인배너 -->
       <div class="banner">
+        <div class="banner_title">
+          <span class="sub_title">에너지의 미래를 이끌어 가는</span>
+          <span class="main_title">Global Energy Forum</span>
+          <span class="day">2025. 9. 17. <p>[Wed]</p> - 9. 18. <p>Thu</p></span>
+          <span class="place">한국에너지공과대학교(KENTECH)</span>
+        </div>
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -151,19 +157,62 @@
               <img src="/image/main_visual.jpg" alt="main_visual" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju1.png" alt="img_naju1" />
+              <img src="/image/img_naju31.png" alt="img_naju31" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju2.png" alt="img_naju2" />
+              <img src="/image/main_visual.jpg" alt="img_naju2" />
             </div>
             <div class="swiper-slide">
-              <img src="/image/img_naju3.png" alt="img_naju3" />
+              <img src="/image/img_naju42.png" alt="img_naju42" />
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+        <!-- 재생버튼 -->
+        <a
+          href="https://youtu.be/OeeQJRxgbow"
+          class="link"
+          onclick="window.open(this.href, '_blank'); return false;"
+        >
+          <svg
+            viewBox="0 0 200 200"
+            width="120"
+            height="120"
+            class="link__svg"
+            aria-label="Naju Global Energy Forum"
+          >
+            <path
+              id="link-circle"
+              d="M 30,100 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"
+            />
+
+            <!-- 텍스트용 외부 원 (이미 자연스러움) -->
+            <path
+              id="text-circle"
+              d="M 16,100 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0"
+              fill="none"
+              stroke="none"
+            />
+
+            <image
+              class="link__arrow"
+              href="/image/play.svg"
+              x="80"
+              y="75"
+              width="50"
+              height="50"
+            />
+
+            <!-- 원형 텍스트: 바깥 원을 기준으로 -->
+            <text class="link__text">
+              <textPath href="#text-circle">
+                • Naju Global Energy Forum • Naju Global Energy Forum •
+              </textPath>
+            </text>
+          </svg>
+        </a>
       </div>
       <!-- 컨텐츠 -->
       <div class="content">
@@ -193,7 +242,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".banner .mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
