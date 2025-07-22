@@ -74,7 +74,7 @@ select:focus {
 
 /* 공통 레이아웃 클래스 */
 .container {
-  max-width: 1200px;
+  max-width: 1340px;
   padding: 0 16px;
   margin: 0 auto;
 }
