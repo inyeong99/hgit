@@ -27,7 +27,8 @@
     <div class="wrapper">
       <!-- 헤더 -->
       <header class="header">
-        <div class="gnb">
+        <div class="gnb maingnb">
+          <!-- 로고 -->
           <div class="logo">
             <a
               href="main.html"
@@ -40,7 +41,8 @@
               />
             </a>
           </div>
-          <nav class="nav" role="navigation" aria-label="주 메뉴">
+          <!-- 메뉴 -->
+          <nav class="nav mainnav" role="navigation" aria-label="주 메뉴">
             <ul role="menubar">
               <li role="none">
                 <a
@@ -124,45 +126,45 @@
               </li>
             </ul>
           </nav>
-
-          <div class="lang">
-            <button onClick="dp_menu()" class="lang_btn">
-              <i class="ri-global-line mr12"></i>KR
+          <!-- 언어 -->
+          <div class="lang mainmap">
+            <button onClick="dp_menu()" class="lang_btn maincolor">
+              <i class="ri-global-line mr12 maincolor"></i>KR
             </button>
             <div class="lang_menu">
               <a href="#">KR</a>
               <a href="#">EN</a>
             </div>
           </div>
-
-          <div class="map">
+          <!-- 사이트맵 -->
+          <div class="map maincolor mainmap">
             <i class="ri-menu-line"></i>
           </div>
         </div>
-        <div class="banner">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="/image/main_visual.jpg" alt="main_visual" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/image/img_naju1.png" alt="img_naju1" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/image/img_naju2.png" alt="img_naju2" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/image/img_naju3.png" alt="img_naju3" />
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
       </header>
-
+      <!-- 메인배너 -->
+      <div class="banner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/image/main_visual.jpg" alt="main_visual" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/img_naju1.png" alt="img_naju1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/img_naju2.png" alt="img_naju2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/img_naju3.png" alt="img_naju3" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
       <!-- 컨텐츠 -->
       <div class="content">
         <div class="speaker"></div>

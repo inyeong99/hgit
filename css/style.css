@@ -6,21 +6,34 @@
 }
 
 .header {
-  width: 100%;
-  height: 940px;
-}
-.header .gnb {
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
+  width: 100%;
+}
+.gnb {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 112px;
   padding-left: 120px;
+}
+/*메인 gnb 컬러*/
+.maingnb {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mainmap {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*메인 컬러*/
+.maincolor {
+  color: white;
+}
+/*서브 gnb 컬러*/
+.subgnb {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 .gnb .logo img {
   width: 185px;
@@ -51,9 +64,12 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: white;
   text-align: center;
   font-size: 18px;
+}
+/*메인 gnb 컬러*/
+.mainnav > ul > li > a {
+  color: #fff;
 }
 .nav > ul > li > ul {
   position: absolute;
@@ -103,10 +119,8 @@ a:focus-visible {
   justify-content: center;
   width: 120px;
   height: 100%;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 .lang_btn {
-  color: white;
   text-align: center;
   font-size: 18px;
 }
@@ -140,18 +154,11 @@ a:focus-visible {
   justify-content: center;
   width: 120px;
   height: 100%;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 .gnb .map i {
-  color: white;
   font-size: 18px;
 }
 /*swiper*/
-.header .banner {
-  position: relative;
-  z-index: 1;
-  background-color: red;
-}
 .swiper {
   position: absolute;
   top: 0;
@@ -181,9 +188,9 @@ a:focus-visible {
 /*서브디자인 영역*/
 
 .content_sub .content {
-    width: 100%;
-    max-width: 1340px;
-    margin: 0 auto 60px;
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto 60px;
 }
 
 .s0102 .sub_inner .title {
@@ -206,4 +213,3 @@ a:focus-visible {
 }
 
 /*서브디자인 영역 마침*/
-
