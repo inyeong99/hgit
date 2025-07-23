@@ -1,179 +1,251 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>나주 글로벌 에너지 포럼</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style2.css" />
-    <!-- 리믹스 아이콘 폰트 -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- 폰트 -->
-    <link rel="stylesheet" href="/css/font/pretendard-subset.css" />
-    <link rel="stylesheet" href="/css/font/pretendard.css" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- 헤더 -->
-      <header class="header">
-        <div class="gnb">
-          <!-- 로고 -->
-          <div class="logo">
-            <a href="main.html" class="logo" aria-label="나주 글로벌에너지포럼 홈으로 이동">
-              <img src="/image/header_logo.png" alt="나주 글로벌에너지포럼 로고" />
-            </a>
-          </div>
-          <!-- 메뉴 -->
-          <nav class="nav mainnav" role="navigation" aria-label="주 메뉴">
-            <ul role="menubar">
-              <li>
-                <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">나주 글로벌에너지포럼</a>
-                <ul class="submenu" role="menu" aria-label="나주 글로벌에너지포럼 하위 메뉴">
-                  <li><a href="#" role="menuitem">행사소개</a></li>
-                  <li>
-                    <a href="s0102.html" role="menuitem">인사말씀</a>
-                  </li>
-                  <li>
-                    <a href="#" role="menuitem">행사장 안내</a>
-                  </li>
-                  <li><a href="#" role="menuitem">파트너</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">프로그램</a>
-                <ul class="submenu" role="menu" aria-label="프로그램 하위 메뉴">
-                  <li><a href="#" role="menuitem">프로그램</a></li>
-                  <li><a href="#" role="menuitem">세션</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" role="menuitem">연사소개</a>
-              </li>
-              <li>
-                <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">참가신청</a>
-                <ul class="submenu" role="menu" aria-label="참가신청 하위 메뉴">
-                  <li><a href="#" role="menuitem">참가신청</a></li>
-                  <li><a href="#" role="menuitem">신청확인</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">아카이브</a>
-                <ul class="submenu" role="menu" aria-label="아카이브 하위 메뉴">
-                  <li><a href="#" role="menuitem">지난포럼</a></li>
-                  <li><a href="#" role="menuitem">지식포털</a></li>
-                  <li><a href="#" role="menuitem">youtube</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">미디어</a>
-                <ul class="submenu" role="menu" aria-label="미디어 하위 메뉴">
-                  <li><a href="#" role="menuitem">공지사항</a></li>
-                  <li><a href="#" role="menuitem">관련뉴스</a></li>
-                  <li><a href="#" role="menuitem">행사사진</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <!-- 언어 -->
-          <div class="lang mainmap">
-            <button onClick="dp_menu()" class="lang_btn">
-              <i class="ri-global-line mr12"></i>
-              KR
-            </button>
-            <div class="lang_menu">
-              <a href="#">KR</a>
-              <a href="#">EN</a>
-            </div>
-          </div>
-          <!-- 사이트맵 -->
-          <div class="map">
-            <i class="ri-menu-line"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나주 글로벌 에너지 포럼</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <!-- 리믹스 아이콘 폰트 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- 폰트 -->
+  <link rel="stylesheet" href="/css/font/pretendard-subset.css" />
+  <link rel="stylesheet" href="/css/font/pretendard.css" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="gnb">
+        <!-- 로고 -->
+        <div class="logo">
+          <a href="main.html" class="logo" aria-label="나주 글로벌에너지포럼 홈으로 이동">
+            <img src="/image/header_logo.png" alt="나주 글로벌에너지포럼 로고" />
+          </a>
+        </div>
+        <!-- 메뉴 -->
+        <nav class="nav mainnav" role="navigation" aria-label="주 메뉴">
+          <ul role="menubar">
+            <li>
+              <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">나주 글로벌에너지포럼</a>
+              <ul class="submenu" role="menu" aria-label="나주 글로벌에너지포럼 하위 메뉴">
+                <li><a href="#" role="menuitem">행사소개</a></li>
+                <li>
+                  <a href="s0102.html" role="menuitem">인사말씀</a>
+                </li>
+                <li>
+                  <a href="#" role="menuitem">행사장 안내</a>
+                </li>
+                <li><a href="#" role="menuitem">파트너</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">프로그램</a>
+              <ul class="submenu" role="menu" aria-label="프로그램 하위 메뉴">
+                <li><a href="#" role="menuitem">프로그램</a></li>
+                <li><a href="#" role="menuitem">세션</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" role="menuitem">연사소개</a>
+            </li>
+            <li>
+              <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">참가신청</a>
+              <ul class="submenu" role="menu" aria-label="참가신청 하위 메뉴">
+                <li><a href="#" role="menuitem">참가신청</a></li>
+                <li><a href="#" role="menuitem">신청확인</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">아카이브</a>
+              <ul class="submenu" role="menu" aria-label="아카이브 하위 메뉴">
+                <li><a href="#" role="menuitem">지난포럼</a></li>
+                <li><a href="#" role="menuitem">지식포털</a></li>
+                <li><a href="#" role="menuitem">youtube</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">미디어</a>
+              <ul class="submenu" role="menu" aria-label="미디어 하위 메뉴">
+                <li><a href="#" role="menuitem">공지사항</a></li>
+                <li><a href="#" role="menuitem">관련뉴스</a></li>
+                <li><a href="#" role="menuitem">행사사진</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- 언어 -->
+        <div class="lang mainmap">
+          <button onClick="dp_menu()" class="lang_btn">
+            <i class="ri-global-line mr12"></i>
+            KR
+          </button>
+          <div class="lang_menu">
+            <a href="#">KR</a>
+            <a href="#">EN</a>
           </div>
         </div>
-      </header>
-      <!-- 메인배너 -->
-      <div class="banner">
-        <!-- 메인배너 타이틀 -->
-        <div class="banner_title">
-          <h4 class="sub_title">에너지의 미래를 이끌어 가는</h4>
-          <h1 class="main_title">
-            <img src="/image/naju_bi.png" alt="naju_bi" />
-            Global Energy Forum
-          </h1>
-          <h2 class="day">
-            2025. 9. 17.
-            <span>[Wed]</span>
-            - 9. 18.
-            <span>[Thu]</span>
-          </h2>
-          <h4 class="place">한국에너지공과대학교(KENTECH)</h4>
+        <!-- 사이트맵 -->
+        <div class="map">
+          <i class="ri-menu-line"></i>
         </div>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/image/main_visual.jpg" alt="main_visual" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/image/img_naju31.png" alt="img_naju31" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/image/main_visual.jpg" alt="img_naju2" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/image/img_naju42.png" alt="img_naju42" />
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- 재생버튼 -->
-        <a href="https://youtu.be/OeeQJRxgbow" class="link" onclick="window.open(this.href, '_blank'); return false;">
-          <svg viewBox="0 0 200 200" width="120" height="120" class="link__svg" aria-label="Naju Global Energy Forum">
-            <path id="link-circle" d="M 30,100 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" />
-
-            <!-- 텍스트용 외부 원 (이미 자연스러움) -->
-            <path id="text-circle" d="M 16,100 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0" fill="none" stroke="none" />
-
-            <image class="link__arrow" href="/image/play.svg" x="80" y="75" width="50" height="50" />
-
-            <!-- 원형 텍스트: 바깥 원을 기준으로 -->
-            <text class="link__text">
-              <textPath href="#text-circle">• Naju Global Energy Forum • Naju Global Energy Forum •</textPath>
-            </text>
-          </svg>
-        </a>
       </div>
-      <!-- 컨텐츠 -->
-      <div class="content">
-        <div class="speaker"></div>
-        <div class="links"></div>
+    </header>
+    <!-- 메인배너 -->
+    <div class="banner">
+      <!-- 메인배너 타이틀 -->
+      <div class="banner_title">
+        <h4 class="sub_title">에너지의 미래를 이끌어 가는</h4>
+        <h1 class="main_title">
+          <img src="/image/naju_bi.png" alt="naju_bi" />
+          Global Energy Forum
+        </h1>
+        <h2 class="day">
+          2025. 9. 17.
+          <span>[Wed]</span>
+          - 9. 18.
+          <span>[Thu]</span>
+        </h2>
+        <h4 class="place">한국에너지공과대학교(KENTECH)</h4>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/image/main_visual.jpg" alt="main_visual" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/img_naju31.png" alt="img_naju31" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/main_visual.jpg" alt="img_naju2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/img_naju42.png" alt="img_naju42" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- 재생버튼 -->
+      <a href="https://youtu.be/OeeQJRxgbow" class="link" onclick="window.open(this.href, '_blank'); return false;">
+        <svg viewBox="0 0 200 200" width="120" height="120" class="link__svg" aria-label="Naju Global Energy Forum">
+          <path id="link-circle" d="M 30,100 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" />
+
+          <!-- 텍스트용 외부 원 (이미 자연스러움) -->
+          <path id="text-circle" d="M 16,100 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0" fill="none" stroke="none" />
+
+          <image class="link__arrow" href="/image/play.svg" x="80" y="75" width="50" height="50" />
+
+          <!-- 원형 텍스트: 바깥 원을 기준으로 -->
+          <text class="link__text">
+            <textPath href="#text-circle">• Naju Global Energy Forum • Naju Global Energy Forum •</textPath>
+          </text>
+        </svg>
+      </a>
+    </div>
+    <!-- 메인컨텐츠 -->
+    <div class="maincontent">
+      <!-- 주요연사 -->
+      <div class="speaker">
+        <div class="maincontainer">
+          <div class="speaker_box_wrap">
+            <div class="speaker_row">
+              <div class="speaker_box">
+              </div>
+              <div class="speaker_box">
+                <a href="#" class="speaker_mask">
+                  <div class="speaker_img">
+                    <img src="/image/img_naju31.png" alt="">
+                    <div class="name">리처드 뮬러 <p>UC버클리 교수</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="speaker_box">
+                <a href="#" class="speaker_mask">
+                  <div class="speaker_img">
+                    <img src="/image/img_naju31.png" alt="">
+                    <div class="name">마크 제이콥슨 <p>스탠포드대 교수</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="speaker_row">
+              <div class="speaker_box">
+                <a href="#" class="speaker_mask">
+                  <div class="speaker_img">
+                    <img src="/image/img_naju31.png" alt="">
+                    <div class="name">마니 사라시 <p>킹압둘라과기대 교수</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="speaker_box">
+                <a href="#" class="speaker_mask">
+                  <div class="speaker_img">
+                    <img src="/image/img_naju31.png" alt="">
+                    <div class="name">이경수 <p>Enable Fusion 대표</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="speaker_box">
+                <a href="#" class="speaker_mask">
+                  <div class="speaker_img">
+                    <img src="/image/img_naju31.png" alt="">
+                    <div class="name">리처드 뮬러 <p>UC버클리 교수</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 바로가기 링크 -->
+        <div class="links">
+          <div class="maincontainer">
+
+          </div>
+        </div>
+        <!-- 공지사항 -->
         <div class="notice"></div>
+        <!-- 갤러리 -->
         <div class="gallery"></div>
+        <!-- 파트너 -->
         <div class="fartners"></div>
       </div>
 
       <!-- 푸터 -->
-      <footer>
-        <address><p>전라남도 나주시 우정로 10 사동 2층</p></address>
-        <div class="tel">
-          <p>Tel. 070-4917-8757 / E-mail. ngef2024@admco.kr</p>
-        </div>
-        <div class="tel2">사업자번호: 248-86-02773</div>
-        <div class="coyright">
-          <p>Copyright© 나주글로벌에너지포럼.All rights reserved</p>
-        </div>
-        <div class="footerlogo"></div>
-      </footer>
+      <div class="maincontainer">
+        <footer>
+          <address>
+            <p>전라남도 나주시 우정로 10 사동 2층</p>
+          </address>
+          <div class="tel">
+            <p>Tel. 070-4917-8757 / E-mail. ngef2024@admco.kr</p>
+          </div>
+          <div class="tel2">사업자번호: 248-86-02773</div>
+          <div class="coyright">
+            <p>Copyright© 나주글로벌에너지포럼.All rights reserved</p>
+          </div>
+          <div class="footerlogo"></div>
+        </footer>
+      </div>
     </div>
     <!-- JS 연결 -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -205,5 +277,6 @@
         },
       });
     </script>
-  </body>
+</body>
+
 </html>
