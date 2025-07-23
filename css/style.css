@@ -366,8 +366,6 @@ a:focus-visible {
   background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 .maincontainer {
@@ -430,9 +428,15 @@ a:focus-visible {
   background-size: contain;
   content: "";
   -webkit-transition: transform 0.4s;
-  -moz-transition: transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
+}
+.maincontainer .speaker_mask:hover::after {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.maincontainer .speaker_mask:hover .speaker_img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .speaker_img .name {
   position: absolute;
@@ -452,17 +456,155 @@ a:focus-visible {
   font-size: 16px;
   font-weight: 400;
 }
+.cont_title {
+  line-height: 120%;
+  margin-bottom: 24px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.cont_title span {
+  color: #0075c2;
+}
+.cont_title p {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+}
+.speaker_box a.more {
+  position: relative;
+  z-index: 0;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 4px 18px 4px 4px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #111111;
+  transition: color 0.4s;
+  font-size: 16px;
+}
+.speaker_box a.more::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #0075c2;
+  content: "";
+  transition: left 0.3s ease;
+}
+.speaker_box a.more:hover::before {
+  left: 0;
+}
+.speaker_box a.more i {
+  z-index: 1;
+  padding: 16px;
+  margin-right: 8px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #0075c2;
+  font-size: 16px;
+}
+
 /*바로가기 링크*/
-.maincontainer .links {
+.maincontent .links {
+  background-image: url("/image/quickmenu_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.links .maincontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.maincontent .links .speaker_box {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+}
+.maincontent .links .cont_title {
+  margin-top: 60px;
+  color: #fff;
+}
+.maincontent .link_box tr:first-child {
+  max-width: 880px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.maincontent .link_box td {
+  width: calc(100 / 3);
+  height: 320px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-collapse: collapse;
+}
+.maincontent .link_box td i {
+  font-size: 28px;
+}
+.maincontent .link_box td a {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.maincontent .link_box a::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  background-color: #0075c2;
+  content: "";
+  transition: opacity 0.6s ease;
+}
+.maincontent .link_box a:hover::before {
+  opacity: 1;
+}
+.maincontent .link_box .more {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+.maincontent .link_box .td_buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.maincontent .link_box .link_title {
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 600;
+}
+.maincontent .link_box .link_title p {
+  padding-top: 18px;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*공지사항*/
-.maincontainer .notice {
+.maincontent .notice {
 }
 /*갤러리*/
-.maincontainer .gallery {
+.maincontent .gallery {
 }
 /*파트너*/
-.maincontainer .fartners {
+.maincontent .fartners {
 }
 /*푸터 -----------------------------------------*/
 .btn_more {
@@ -477,4 +619,17 @@ a:focus-visible {
 .btn_more i {
   color: #fff;
   font-size: 32px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 150%;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
 }
