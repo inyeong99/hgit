@@ -227,125 +227,71 @@
     <div class="container">
       <div class="content_sub">
         <div class="content">
-          <div class="s0102 sub_page">
+          <div class="s0103 sub_page">
             <div class="sub_inner">
-              <div class="title">
-                <h2 class="tit">
-                  <p>
-                    안녕하십니까?
-                    <br />
-                    <span class="tit_color">나주글로벌 에너지포럼 2025</span>
-                    <br />
-                    에 방문해주신 여러분 환영합니다!
-                  </p>
-                </h2>
-                <div class="Mayor_box">
-                  <img src="image/sub/s0102_Mayor_img.png" class="Mayor_img" />
-                  <p class="sign">
-                    나주시장
-                    <img src="image/sub/s0102_Mayor_sign.png" class="Mayor_img" />
-                  </p>
-                </div>
-                <!--Mayor_box-->
-              </div>
-              <!--title-->
 
-              <div class="con_wrap">
-                <p class="exp">
-                  에너지 생태계에 미치는 변화의 물결이 점점 거세지고 있습니다.
-                  <br />
-                  탄소중립과 지속가능한 발전, AI · 빅테이터로인한 전력 수요의 증가와신재생에너지로의 전환,
-                  <br />
-                  직류산업의 확대와 분산에너지 시대의개막 등 에너지산업 전반에걸쳐 일어나는
-                  <br />
-                  많은 변화가 에너지 관련 관계자들에게 더높은 지식과 통찰을 요구하고 있습니다.
-                  <br />
-                  에너지 관련 관게자들에게 더 높은 지식과 통찰을 요구하고 있습니다.
-                  <br />
-                  이런 현실에서 대한민국 에너지수도를 지향하는 나주시가 에너지의 미래를 이끌어가기 위해
-                  <br />
-                  「나주 글로벌에너지포럼 2024」의 첫걸음을 시작합니다.
-                  <br />
-                  에너지분야를 넘어 지역소멸 극복과 미래 먹거리 창출을 위해 국내외 최고의 에너지산업 리더들이
-                  <br />
-                  분산에너지, 수소에너지, 원자력과 핵융합의 미래 비전을 공유할 것입니다.
-                  <br />
-                  시민과 에너지 분야 관계자들의 많은 관심과 성원을 부탁드리며,
-                  <br />
-                  직접 참석하셔서 더 많은 지혜를 나누시기 바랍니다.
-                  <br />
-                  감사합니다.
-                </p>
+              <div class="map_wrap">
+                <div class="map_top">
+                  <div class="left">
+                    <p>한국에너지공과대학교</p>
+                    <p>
+                      전라남도 나주시 켄텍길 21 (빛가람동)
+                    </p>
+                  </div>
+                  <div class="right">
+                    <a href="https://map.naver.com/" target="_blank" title="새창열림">
+                      <img src="../image/sub/naver_map_ico.svg" alt="">
+                      네이버<br>길찾기
+                    </a>
+                    <a href="https://kko.kakao.com/G0836H6IFx" target="_blank" title="새창열림">
+                      <img src="../image/sub/kakao_map_ico.svg" alt="">
+                      카카오<br>길찾기
+                    </a>
+                  </div>
+                </div>
+
+                <div class="map_l map_cmn">
+                  <!--
+                * 카카오맵 - 약도서비스
+                * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                --><!-- 1. 약도 노드 -->
+                  <div class="root_daum_roughmap root_daum_roughmap_landing" id="daumRoughmapContainer1753258943874"
+                    style="width:100%">&nbsp;</div>
+                  <!-- 2. 설치 스크립트 -->
+                  <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                  <script charset="UTF-8"
+                    src="http://busaninmaum.com/web/20230928121728/https://t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/6af7869e/roughmapLander.js"></script>
+                  <!-- 3. 실행 스크립트 -->
+                  <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                      "timestamp": "1753258943874",
+                      "key": "65aaay573jd",
+                      //"mapWidth" : "1340",
+                      "mapHeight": "330"
+                    }).render();
+                  </script>
+                </div>
+                <!--//map_l-->
+
+
               </div>
-              <!--con_wrap-->
+              <!--sub_inners-->
             </div>
-            <!--sub_inners-->
+            <!--s0103 sub_page-->
           </div>
-          <!--s0102 sub_page-->
+          <!--content-->
         </div>
-        <!--content-->
+        <!--content_sub-->
       </div>
-      <!--content_sub-->
+      <!--container-->
     </div>
-    <!--container-->
-  </div>
-  <!-- JS 연결 -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/js.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS 연결 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/js.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
-
-<!--sns공유 열기 스크립트-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const shareBtn = document.querySelector('.sns_btn');
-    const shareBox = document.querySelector('.share_box_on');
-    const closeBtn = document.querySelector('.close_btn');
-
-    shareBtn.addEventListener('click', function () {
-      shareBox.style.display = 'block';
-      shareBox.setAttribute('aria-hidden', 'false');
-    });
-
-    closeBtn.addEventListener('click', function (e) {
-      e.preventDefault(); // 링크 클릭 방지
-      shareBox.style.display = 'none';
-      shareBox.setAttribute('aria-hidden', 'true');
-    });
-  });
-</script>
-
-<!--서브메뉴 열기-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const subMenus = document.querySelectorAll('.subMenu');
-
-    subMenus.forEach(subMenu => {
-      const btn = subMenu.querySelector('button');
-      const ul = subMenu.querySelector('ul');
-
-      // 초기 상태
-      ul.style.display = 'none';
-      btn.classList.remove('on');
-
-      btn.addEventListener('click', function () {
-        const isOpen = ul.style.display === 'block';
-
-        // 모든 메뉴 닫기
-        subMenus.forEach(sm => {
-          sm.querySelector('ul').style.display = 'none';
-          sm.querySelector('button').classList.remove('on');
-        });
-
-        // 클릭한 게 닫혀 있었으면 열기 (toggle)
-        if (!isOpen) {
-          ul.style.display = 'block';
-          btn.classList.add('on');
-        }
-      });
-    });
-  });
-</script>

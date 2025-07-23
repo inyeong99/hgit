@@ -18,5 +18,8 @@
   "prettier.printWidth": 200,
   "prettier.singleAttributePerLine": false,
   "prettier.tabWidth": 2,
-  "prettier.useTabs": false
+  "prettier.useTabs": false,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }
