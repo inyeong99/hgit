@@ -35,9 +35,7 @@ $(document).ready(function () {
     if (e.key === "Escape" || e.key === "Esc") {
       e.preventDefault();
       $mainnav.find(".submenu").slideUp(200);
-      $mainnav
-        .find("> ul > li > a[aria-expanded='true']")
-        .attr("aria-expanded", "false");
+      $mainnav.find("> ul > li > a[aria-expanded='true']").attr("aria-expanded", "false");
     }
   });
 
