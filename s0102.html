@@ -141,8 +141,71 @@
           </ul>
         </div>
         <!--subMenu subMenu2-->
+
+        <div class="util_list">
+          <ul>
+            <li class="share_box">
+
+              <button type="button" class="sns_btn" title="SNS공유 열기">
+                <i class="ri-share-line"></i>
+                <span class="sr-only">SNS 공유</span>
+              </button>
+
+              <div class="share_box_on" aria-hidden="true">
+                <div class="send">
+                  <ul>
+                    <li>
+                      <button type="button" class="fb" title="새창열림">
+                        페이스북
+                      </button>
+                    </li>
+
+                    <li>
+                      <button type="button" class="tw" title="새창열림">
+                        트위터
+                      </button>
+                    </li>
+
+                    <li>
+                      <button type="button" class="na" title="새창열림">
+                        네이버블로그
+                      </button>
+                    </li>
+
+                    <li>
+                      <button type="button" class="ur" title="새창열림">
+                        URL
+                      </button>
+                    </li>
+
+                  </ul>
+                </div>
+                <!--send-->
+
+                <a href="#" class="close_btn">
+                  <span class="sr-only">공유 목록 접기</span>
+                </a>
+
+              </div>
+              <!--share_box_on-->
+            </li>
+
+            <li class="print_btn">
+              <button type="button" onclick="window.print(); return false;">
+                <i class="ri-printer-line"></i>
+                <span class="sr-only">인쇄</span>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+        <!--util_list-->
+
+
       </div>
       <!--nv-menu-->
+
     </div>
     <!--sub_top-->
 
@@ -234,3 +297,23 @@
 </body>
 
 </html>
+
+<!--스크립트-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const shareBtn = document.querySelector('.sns_btn');
+    const shareBox = document.querySelector('.share_box_on');
+    const closeBtn = document.querySelector('.close_btn');
+
+    shareBtn.addEventListener('click', function () {
+      shareBox.style.display = 'block';
+      shareBox.setAttribute('aria-hidden', 'false');
+    });
+
+    closeBtn.addEventListener('click', function (e) {
+      e.preventDefault(); // 링크 클릭 방지
+      shareBox.style.display = 'none';
+      shareBox.setAttribute('aria-hidden', 'true');
+    });
+  });
+</script>

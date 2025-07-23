@@ -1,6 +1,15 @@
 @charset "utf-8";
 /*서브디자인 영역*/
 
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
 /*서브비주얼*/
 
 .sub_top {
@@ -113,11 +122,159 @@
 
 nav.sub_dep3 {
   max-width: 1340px;
-  margin: 2% auto;
+  margin: 94px auto 60px;
 }
 
 nav.sub_dep3 ul {
-  font-size: 0;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+nav.sub_dep3 li:first-child:nth-last-child(4),
+nav.sub_dep3 li:first-child:nth-last-child(4)~li {
+  width: 25%;
+}
+
+nav.sub_dep3 li.on a {
+  color: #0075c2;
+  border-bottom: 2px solid #0075c2;
+}
+
+nav.sub_dep3 li a {
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 20px 10px 20px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  color: #666666;
+  border-bottom: 2px solid #ccc;
+}
+
+nav.sub_dep3 li.on a:before {
+  background: url(../image/sub/dep3_i_on.svg) 0 0 no-repeat;
+}
+
+nav.sub_dep3 li a:before {
+  content: "";
+  background: url(../image/sub/dep3_i_off.svg) 0 0 no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+}
+
+.util_list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.util_list ul {
+  display: flex;
+  gap: 30px;
+  padding-right: 30px;
+}
+
+.util_list::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.util_list ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.util_list .share_box .sns_btn {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.share_box_on {
+  display: none;
+  max-height: 0px;
+  position: absolute;
+  right: 55px;
+  height: 5rem;
+  top: 0px;
+  background: #fff;
+  width: 14rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 3rem;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  text-align: center;
+}
+
+.share_box_on.active {
+  display: block;
+}
+
+.share_box_on .send ul {
+  display: flex;
+  justify-content: center;
+}
+
+.share_box_on .send li .fb {
+  background-position: 0 0;
+}
+
+.share_box_on .send li .tw {
+  background-position: -25px 0;
+}
+
+.share_box_on .send li .na {
+  background-position: -100px 0;
+}
+
+.share_box_on .send li .ur {
+  background-position: -150px 0;
+}
+
+.share_box_on .send li button {
+  width: 25px;
+  height: 25px;
+  background: url(../image/common/ico-sub-share.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.share_box_on .close {
+  position: absolute;
+  right: -5.7rem;
+  top: -0.2rem;
+  background: #fff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  color: #000;
+}
+
+.share_box_on .close i {
+  color: initial;
+}
+
+.util_list button i,
+.util_list i {
+  font-size: 18px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #fff;
+}
+
+.ri-share-line::before {
+  content: "\f0fe";
+}
+
+.ri-printer-line::before {
+  content: "\f029";
 }
 
 .content_sub .content {
@@ -147,7 +304,7 @@ nav.sub_dep3 ul {
   left: 50%;
   width: 1920px;
   height: 514px;
-  background: url("../image/sub/s0102_title_bg.png") 0 0 no-repeat;
+  background: url(../image/sub/s0102_title_bg.png) 0 0 no-repeat;
   background-size: 100% auto;
   content: "";
   transform: translateX(-50%);
