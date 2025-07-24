@@ -119,8 +119,7 @@ html {
   height: 14px;
   background: url(/image/sub/nv_arrow.svg) no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  transition: transform 0.3s ease;
+  <<<<<<< HEAD transition: transform 0.3s ease;
 }
 
 .nv-menu .subMenu button.on::after {
@@ -142,9 +141,8 @@ html {
   color: #333333;
   background: #F9F9F9;
   padding: 0 20px;
-=======
-  content: "";
->>>>>>> 97b07aa4f0af340edded36404622ba3cd874f258
+  =======content: "";
+  >>>>>>>97b07aa4f0af340edded36404622ba3cd874f258
 }
 
 nav.sub_dep3 {

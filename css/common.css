@@ -4,15 +4,18 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
 }
+
 li {
   list-style: none;
 }
+
 a {
   color: #000;
   text-decoration: none;
 }
+
 /* 공통 box-sizing 설정 */
 *,
 *::before,
@@ -25,13 +28,15 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
-  font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: 'Pretendard';
   font-size: 16px;
+  font-weight: 400;
 }
 
 /* 링크 스타일 */
 a {
   color: inherit;
+  font-family: 'Pretendard';
   text-decoration: none;
 }
 
@@ -96,49 +101,35 @@ select:focus {
 }
 
 :root {
-  --spacing-xxxl: 40px;
-  --spacing-xxl: 32px;
-  --spacing-xl: 24px;
-  --spacing-lg: 20px;
-  --spacing: 16px;
-  --spacing-md: 12px;
-  --spacing-sm: 8px;
-  --spacing-xs: 4px;
-  --spacing-Mxxxl: -40px;
-  --spacing-Mxxl: -32px;
-  --spacing-Mxl: -24px;
-  --spacing-Mlg: -20px;
-  --spacing-M: -16px;
-  --spacing-Mmd: -12px;
-  --spacing-Msm: -8px;
-  --spacing-Mxs: -4px;
-  --tf-md: 40px;
-  --tf-sm: 32px;
-  --tf-xs: 24px;
-  --tf-xxs: 24px;
-  --tf-check: 16px;
-  --font-xxxl: 24px;
-  --font-xxl: 23px;
-  --font-xl: 22px;
-  --font-lg: 20px;
-  --font-md-lg: 18px;
-  --font-base-lg: 17px;
-  --font-base: 16px;
-  --font-md: 15px;
-  --font-sm: 14px;
-  --font-xs: 13px;
-  --font-xxs: 12px;
+  --spacing-40: 40px;
+  --spacing-32: 32px;
+  --spacing-28: 28px;
+  --spacing-24: 24px;
+  --spacing-18: 18px;
+  --spacing-16: 16px;
+  --spacing-12: 12px;
+  --spacing-10: 10px;
+  --spacing-8: 8px;
+  --spacing-4: 4px;
+  --fz-xxl: 5em;
+  --fz-xl: 3.75em;
+  --fz-40: 2.5rem;
+  --fz-32: 2rem;
+  --fz-24: 1.5rem;
+  --fz-18: 1.125rem;
+  --fz-16: 1rem;
+  --fz-14: 0.875rem;
+  --fz-12: 0.75rem;
   --color-black: #000;
   --color-default: #111;
   --color-darkgray: #666;
   --color-gray: #bbb;
   --color-gray2: #ccc;
-  --color-lightgray: #e8e8e8;
-  --color-lightgray2: #f3f3f3;
+  --color-lightgray: rgba(255, 255, 255, 0.3);
+  --color-lightgray2: #f8f8f8;
   --color-white: #fff;
-  --color-primary: #635fff;
-  --color-secondary: #8656f5;
-  --color-navy: #314068;
+  --color-primary: #0075c2;
+  --color-secondary: #eb5402;
   --color-red: #ff0a73;
   --color-deepred: #e11212;
   --color-yellow: #ffb400;
@@ -146,9 +137,20 @@ select:focus {
   --color-deepgreen: #0d7617;
   --color-blue: #0082ff;
   --color-deepblue: #0f629e;
-  --bg-color-main: #f5f8ff;
-  --bg-color-content: #f4f5fa;
-  --bg-color-content2: #fafafa;
+  --bg-color-main: #ffffff;
+  --fw-Black: 900;
+  --fw-ExtraBold: 800;
+  --fw-Bold: 700;
+  --fw-SemiBold: 600;
+  --fw-Medium: 500;
+  --fw-Regular: 400;
+  --fw-Light: 300;
+  --fw-ExtraLight: 200;
+  --fw-Thin: 100;
+}
+
+.mr12 {
+  margin-right: var(---spacing-12);
 }
 
 .btn_color {
